@@ -114,23 +114,14 @@ Arduino_LoRaWAN::cEventLog myEventLog;
 //
 // #define COMPILE_REGRESSION_TEST 1
 
-#ifdef COMPILE_REGRESSION_TEST
-# define FILLMEIN_8     1, 0, 0, 0, 0, 0, 0, 0
-# define FILLMEIN_16    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2
-#else
-# warning "You must replace the values marked FILLMEIN with real values from the TTN control panel!"
-# define FILLMEIN_8 (#dont edit this, edit the lines that use FILLMEIN_8)
-# define FILLMEIN_16 (#dont edit this, edit the lines that use FILLMEIN_16)
-#endif
-
 // deveui, little-endian
-static const std::uint8_t deveui[] = { FILLMEIN_8 };
+static const std::uint8_t deveui[] = { 0x01,0x00,0x00,0x00,0x00,0x00,0x00,0x00 };
 
 // appeui, little-endian
-static const std::uint8_t appeui[] = { FILLMEIN_8 };
+static const std::uint8_t appeui[] = { 0x01,0x00,0x00,0x00,0x00,0x00,0x00,0x00 };
 
 // appkey: just a string of bytes, sometimes referred to as "big endian".
-static const std::uint8_t appkey[] = { FILLMEIN_16 };
+static const std::uint8_t appkey[] = { 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x02 };
 
 /****************************************************************************\
 |
