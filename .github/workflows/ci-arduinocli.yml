@@ -53,7 +53,7 @@ jobs:
       - uses: actions/checkout@v2
         name: Set up mcci-catena-ci
         with:
-          repository: mcci-catena/mcci-catena-ci
+          repository: Ram-mcci/mcci-catena-ci
           path: mcci-catena-ci
 
       - name: "Get library: Catena-mcciadk"
@@ -77,7 +77,7 @@ jobs:
       - name: "Get library: arduino-lorawan"
         uses: actions/checkout@v2
         with:
-          repository: mcci-catena/arduino-lorawan
+          repository: Ram-mcci/arduino-lorawan
           path: libraries/arduino-lorawan
           
       - name: "Get library: arduino-lmic"
