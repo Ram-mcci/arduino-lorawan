@@ -65,7 +65,7 @@ jobs:
       - name: "Get library: Adafruit_BME280_Library"
         uses: actions/checkout@v2
         with:
-          repository: adafruit/Adafruit_BME280_Library
+          repository: mcci-catena/Adafruit_BME280_Library
           path: libraries/Adafruit_BME280_Library
           
       - name: "Get library: Adafruit_Sensor"
